@@ -2,7 +2,7 @@
 FROM node:20
 
 # Set working directory
-WORKDIR /
+WORKDIR /app
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of the application code
-COPY . .
+COPY . ./
 
 # Expose port (change if your app uses a different port)
 EXPOSE 3000
