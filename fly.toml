@@ -29,6 +29,6 @@ primary_region = 'sjc'
 
 [env]
   NODE_ENV = 'production'
-  PORT = '8080'
+  PORT = '3000'
   DB_PATH = ':memory:'
   PUBLIC_URL = 'https://atrewind.com'
